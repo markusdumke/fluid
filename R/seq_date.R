@@ -7,6 +7,8 @@
 #' @param to Character/Date scalar. End date.
 #' @param by Passed on to [seq.Date].
 #'
+#' @export
+#'
 #' @examples
 #' seq_date("2018-09-01", "2018-09-10", by = 1L)
 seq_date <- function(from, to, by = 1L) {
