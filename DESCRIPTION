@@ -1,0 +1,19 @@
+Package: fluid
+Title: Useful Functions to Help Your Programming Workflow
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Markus",
+           family = "Dumke",
+           role = c("aut", "cre"),
+           email = "markusdumke@gmail.com")
+Description: Useful Functions to Help Your Programming Workflow.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.0
+Imports: 
+    data.table,
+    magrittr,
+    purrr,
+    rstudioapi
