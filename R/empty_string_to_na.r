@@ -8,5 +8,6 @@
 #' empty_string_to_na(c("a", "", "", "b"))
 empty_string_to_na <- function(.x) {
   .x[.x == ""] <- NA_character_
+  .x[.x == "NA"] <- NA_character_
   .x
 }
