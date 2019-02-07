@@ -3,6 +3,7 @@
 #' @param .x Character vector.
 #'
 #' @return Vector of same length as `.x`.
+#' @export
 #'
 #' @examples
 #' empty_string_to_na(c("a", "", "NA", "b"))
