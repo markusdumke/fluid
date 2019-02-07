@@ -16,4 +16,5 @@ Imports:
     data.table,
     magrittr,
     purrr,
-    rstudioapi
+    rstudioapi,
+    stringr

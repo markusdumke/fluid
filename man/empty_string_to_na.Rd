@@ -2,7 +2,7 @@
 % Please edit documentation in R/empty_string_to_na.r
 \name{empty_string_to_na}
 \alias{empty_string_to_na}
-\title{Convert empty string to NA}
+\title{Convert empty string and "NA" to NA}
 \usage{
 empty_string_to_na(.x)
 }
@@ -13,8 +13,8 @@ empty_string_to_na(.x)
 Vector of same length as \code{.x}.
 }
 \description{
-Convert empty string to NA
+Convert empty string and "NA" to NA
 }
 \examples{
-empty_string_to_na(c("a", "", "", "b"))
+empty_string_to_na(c("a", "", "NA", "b"))
 }
