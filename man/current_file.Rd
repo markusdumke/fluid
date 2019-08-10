@@ -19,5 +19,7 @@ Character scalar with the path.
 Path to currently open document in RStudio
 }
 \examples{
-current_file()
+if (interactive()) {
+  current_file()
+}
 }

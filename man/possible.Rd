@@ -40,8 +40,6 @@ safe(log("a"))
 possible(log(10), NA)
 possible(log("e"), NA)
 
-quiet(log(10))
-quiet(log("a"))
 }
 \seealso{
 \code{\link[purrr:safely]{purrr::safely()}}

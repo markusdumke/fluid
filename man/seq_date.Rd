@@ -4,19 +4,19 @@
 \alias{seq_date}
 \title{Generate sequence of dates}
 \usage{
-seq_date(from, to, by = 1L)
+seq_date(.from, .to, .by = 1L)
 }
 \arguments{
-\item{from}{Character/Date scalar. Starting date.}
+\item{.from}{Character/Date scalar. Starting date.}
 
-\item{to}{Character/Date scalar. End date.}
+\item{.to}{Character/Date scalar. End date.}
 
-\item{by}{Passed on to \link{seq.Date}.}
+\item{.by}{Passed on to \link{seq.Date}.}
 }
 \description{
 This is like \link{seq.Date}, but automatically parses character inputs in from
 and to arguments making it more convenient to work with.
 }
 \examples{
-seq_date("2018-09-01", "2018-09-10", by = 1L)
+seq_date("2018-09-01", "2018-09-10", .by = 1L)
 }

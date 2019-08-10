@@ -27,8 +27,6 @@
 #' possible(log(10), NA)
 #' possible(log("e"), NA)
 #'
-#' quiet(log(10))
-#' quiet(log("a"))
 possible <- function(.expression, .otherwise, ...) {
   f_possibly <- purrr::possibly(~ .expression, otherwise = .otherwise, ...)
   f_possibly()

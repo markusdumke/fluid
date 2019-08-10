@@ -10,6 +10,7 @@
 #'
 #' @return A vector.
 #' @export
+#' @import data.table
 #'
 #' @examples
 #' .x = c("Plebejus optilete", "Aglais io", "Plebejus optilete")
@@ -40,3 +41,6 @@ map_values <- function(.x, .from, .to, .verbose = TRUE) {
 # FIXME:
 # What about factors?
 # Warning if elements of .from are not found in .x?
+
+# Hide note "no visible binding for global variable"
+utils::globalVariables(c(".", "N", "from", "to"))

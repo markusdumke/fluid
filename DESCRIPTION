@@ -1,6 +1,6 @@
 Package: fluid
 Title: Useful Functions to Help Your Programming Workflow
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person(given = "Markus",
            family = "Dumke",
@@ -11,10 +11,12 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 Imports: 
     data.table,
     magrittr,
     purrr,
     rstudioapi,
-    stringr
+    stats,
+    stringr,
+    utils

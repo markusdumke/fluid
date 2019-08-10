@@ -34,6 +34,7 @@ ones <- function(.nrow, .ncol) {
 
 #' @rdname matrices
 #' @export
+#' @importFrom stats runif
 random <- function(.nrow, .ncol) {
   if (missing(.ncol))
     .ncol <- .nrow

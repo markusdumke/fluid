@@ -6,7 +6,9 @@
 #' @rdname current_file
 #'
 #' @examples
-#' current_file()
+#' if (interactive()) {
+#'   current_file()
+#' }
 current_file <- function() {
   rstudioapi::getSourceEditorContext()$path
 }

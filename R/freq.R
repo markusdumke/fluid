@@ -8,6 +8,7 @@
 #'
 #' @return Table object.
 #' @export
+#' @importFrom utils head
 #' @rdname freq
 #'
 #' @examples

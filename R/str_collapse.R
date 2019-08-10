@@ -29,3 +29,21 @@ str_collapse <- function(.x, .collapse = ",") {
 str_split_v <- function(.x, .pattern) {
   stringr::str_split(.x, pattern = .pattern, simplify = TRUE) %>% as.vector
 }
+
+
+#' Concatenate strings
+#'
+#' Infix operator for paste0.
+#'
+#' @param .x A character value.
+#' @param .y A character value
+#'
+#' @return A character pasted together from .x and .y.
+#' @export
+#'
+#' @examples
+#' "Pasting " %s% "strings"
+`%s%` <- function(.x, .y){
+  paste0(.x, .y)
+}
+

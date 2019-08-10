@@ -5,9 +5,12 @@
 \alias{Datetime}
 \title{Create a Date or Datetime vector}
 \usage{
-Date(length = 0L)
+Date(.length = 0L)
 
-Datetime(length = 0L)
+Datetime(.length = 0L)
+}
+\arguments{
+\item{.length}{Integer scalar. Length of vector.}
 }
 \description{
 Equivalent to \code{character()}, \code{numeric()}, \code{integer()} etc.
