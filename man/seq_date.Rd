@@ -4,7 +4,7 @@
 \alias{seq_date}
 \title{Generate sequence of dates}
 \usage{
-seq_date(.from, .to, .by = 1L, .length.out)
+seq_date(.from, .to, .by, .length.out = NULL)
 }
 \arguments{
 \item{.from}{Character/Date scalar. Starting date.}
@@ -20,6 +20,7 @@ This is like \link{seq.Date}, but automatically parses character inputs in from
 and to arguments making it more convenient to work with.
 }
 \examples{
-seq_date("2018-09-01", "2018-09-10", .by = 1L)
+seq_date("2018-09-01", "2018-09-10")
+seq_date("2018-09-01", "2018-09-10", .by = 2L)
 seq_date("2019-01-01", .length.out = 10L)
 }

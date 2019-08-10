@@ -88,3 +88,5 @@ freq_table <- function(.x, .lump = TRUE, .cum = FALSE, .decreasing = TRUE, .digi
 
   x[]
 }
+
+globalVariables(c("Prop", "Cum.N", "Cum.Prop", "n_NA"))

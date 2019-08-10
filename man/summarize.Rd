@@ -13,6 +13,7 @@ summarize(.Data)
 Summarize data.frame
 }
 \examples{
+library(data.table)
 .Data <- data.table(a = letters[1:3],
                     b = 1:12,
                     c = runif(12),

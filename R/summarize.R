@@ -11,6 +11,7 @@ cat_line <- function(...) {
 #' @export
 #'
 #' @examples
+#' library(data.table)
 #' .Data <- data.table(a = letters[1:3],
 #'                     b = 1:12,
 #'                     c = runif(12),
@@ -121,6 +122,8 @@ summarize <- function(.Data) {
   }
   invisible(.Data)
 }
+
+globalVariables(c("n_NA"))
 
 # should work for vectors and data.frames, data.tables
 # nrow, ncol

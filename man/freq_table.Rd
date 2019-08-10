@@ -12,6 +12,8 @@ freq_table(.x, .lump = TRUE, .cum = FALSE, .decreasing = TRUE,
 
 \item{.lump}{Lump together small categories to "Other"?}
 
+\item{.cum}{Logical value. Show cumulative sums?}
+
 \item{.decreasing}{Logical value. Sort descending?}
 
 \item{.digits}{Integer value. Number of digits to round proportions to.}
