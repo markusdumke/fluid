@@ -49,6 +49,7 @@ infreq <- function(.x, .n = 10, .prop = FALSE) {
 #'
 #' @param .x A vector of values, typical factor/character.
 #' @param .lump Lump together small categories to "Other"?
+#' @param .cum Logical value. Show cumulative sums?
 #' @param .decreasing Logical value. Sort descending?
 #' @param .digits Integer value. Number of digits to round proportions to.
 #' @param ... Arguments passed on to [forcats::fct_lump()].

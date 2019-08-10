@@ -24,3 +24,27 @@ You can install fluid from Github with:
 ``` r
 remotes::install_github("markusdumke/fluid")
 ```
+
+## Summarize a data.frame
+
+```{r}
+library(fluid)
+
+summarize(iris)
+```
+
+```{r}
+library(nycflights13)
+
+flights$carrier %>% freq_table(.cum = TRUE)
+```
+
+
+## Sequence generators
+
+```{r}
+seq_date("2019-01-01", "2019-12-31", .by = "month")
+seq_date("2019-01-01", .length.out = 10)
+seq_date("2018-09-01", "2018-09-10", .by = 2L)
+seq_date("2018-09-01", "2018-09-05")
+```

@@ -11,12 +11,17 @@
 #' @export
 #'
 #' @examples
-#' seq_date("2018-09-01", "2018-09-10", .by = 1L)
+#' seq_date("2018-09-01", "2018-09-10")
+#' seq_date("2018-09-01", "2018-09-10", .by = 2L)
 #' seq_date("2019-01-01", .length.out = 10L)
-seq_date <- function(.from, .to, .by = 1L, .length.out) {
+seq_date <- function(.from, .to, .by, .length.out = NULL) {
   .from <- as.Date(.from)
   if (!missing(.to)) {
     .to <- as.Date(.to)
+  }
+
+  if (missing(.by)) {
+    .by <- 1L
   }
 
   seq.Date(from = .from, to = .to, by = .by, length.out = .length.out)

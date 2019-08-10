@@ -22,3 +22,5 @@ Imports:
     stats,
     stringr,
     utils
+Suggests:
+    nycflights13
