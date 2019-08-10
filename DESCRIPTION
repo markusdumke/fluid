@@ -13,7 +13,9 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 Imports: 
+    crayon,
     data.table,
+    forcats,
     magrittr,
     purrr,
     rstudioapi,

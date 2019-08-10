@@ -6,15 +6,20 @@
 #' @param .from Character/Date scalar. Starting date.
 #' @param .to Character/Date scalar. End date.
 #' @param .by Passed on to [seq.Date].
+#' @param .length.out Passed on to [seq.Date].
 #'
 #' @export
 #'
 #' @examples
 #' seq_date("2018-09-01", "2018-09-10", .by = 1L)
-seq_date <- function(.from, .to, .by = 1L) {
-  from <- as.Date(.from)
-  to <- as.Date(.to)
-  seq.Date(from = from, to = to, by = .by)
+#' seq_date("2019-01-01", .length.out = 10L)
+seq_date <- function(.from, .to, .by = 1L, .length.out) {
+  .from <- as.Date(.from)
+  if (!missing(.to)) {
+    .to <- as.Date(.to)
+  }
+
+  seq.Date(from = .from, to = .to, by = .by, length.out = .length.out)
 }
 
 #' Create a Date or Datetime vector

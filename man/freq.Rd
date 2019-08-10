@@ -5,14 +5,16 @@
 \alias{infreq}
 \title{Show most/least frequent values.}
 \usage{
-freq(.x, .n = 10)
+freq(.x, .n = 10, .prop = FALSE)
 
-infreq(.x, .n = 10)
+infreq(.x, .n = 10, .prop = FALSE)
 }
 \arguments{
 \item{.x}{A vector passed on to \link{table}.}
 
 \item{.n}{Integer scalar. Number of classes to show.}
+
+\item{.prop}{Logical value. Show proportions?}
 }
 \value{
 Table object.
