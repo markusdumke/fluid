@@ -3,6 +3,12 @@
 
 # fluid
 
+<!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
 The goal of fluid is to provide useful functions for your R programming
 workflow.
 
@@ -75,4 +81,12 @@ seq_date("2018-09-01", "2018-09-10", .by = 2L)
 #> [1] "2018-09-01" "2018-09-03" "2018-09-05" "2018-09-07" "2018-09-09"
 seq_date("2018-09-01", "2018-09-05")
 #> [1] "2018-09-01" "2018-09-02" "2018-09-03" "2018-09-04" "2018-09-05"
+```
+
+``` r
+seq_row(mtcars)
+#>  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+#> [24] 24 25 26 27 28 29 30 31 32
+seq_col(mtcars)
+#>  [1]  1  2  3  4  5  6  7  8  9 10 11
 ```

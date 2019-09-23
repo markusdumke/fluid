@@ -8,8 +8,31 @@
 #'
 #' @examples
 #' str_collapse(letters, ",")
-str_collapse <- function(.x, .collapse = ",") {
+str_collapse <- function(.x, .collapse = "") {
   stringr::str_c(.x, collapse = .collapse)
+}
+
+#' Keep / discard strings based on pattern
+#'
+#' @param .x A character vector to collapse.
+#' @param .pattern A character value. Pattern to look for.
+#'
+#' @return A character vector.
+#' @export
+#' @rdname str_keep
+#'
+#' @examples
+#' fruit <- c("apple", "banana", "pear", "pinapple")
+#' str_keep(fruit, "apple")
+#' str_discard(fruit, "apple")
+str_discard <- function(.x, .pattern) {
+  .x[!stringr::str_detect(.x, .pattern)]
+}
+
+#' @export
+#' @rdname str_keep
+str_keep <- function(.x, .pattern) {
+  .x[stringr::str_detect(.x, .pattern)]
 }
 
 

@@ -4,7 +4,7 @@
 \alias{str_collapse}
 \title{Collapse strings into one.}
 \usage{
-str_collapse(.x, .collapse = ",")
+str_collapse(.x, .collapse = "")
 }
 \arguments{
 \item{.x}{A character vector to collapse.}

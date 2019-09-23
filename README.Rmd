@@ -15,6 +15,10 @@ knitr::opts_chunk$set(
 
 # fluid
 
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
 The goal of fluid is to provide useful functions for your R programming workflow.
 
 ## Installation
@@ -48,3 +52,10 @@ seq_date("2019-01-01", .length.out = 10)
 seq_date("2018-09-01", "2018-09-10", .by = 2L)
 seq_date("2018-09-01", "2018-09-05")
 ```
+
+```{r}
+seq_row(mtcars)
+seq_col(mtcars)
+```
+
+

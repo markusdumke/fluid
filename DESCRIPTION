@@ -1,6 +1,6 @@
 Package: fluid
 Title: Useful Functions to Help Your Programming Workflow
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     person(given = "Markus",
            family = "Dumke",
